@@ -1,3 +1,11 @@
+:root {
+    --bs-primary: #1c1c1c;
+    --bs-primary-rgb: 28, 28, 28;
+    --bs-secondary: #daff01;
+    --bs-secondary-rgb: 218, 255, 1;
+    --bs-info: #5d31ff;
+}
+
 html {
     font-family: 'Ruda', sans-serif;
 }
@@ -6,26 +14,29 @@ html {
     box-sizing: border-box;
 }
 
-:root {
-    --bs-primary: #1c1c1c;
-    --bs-primary-rgb: 28, 28, 28;
-    --bs-secondary: #daff01;
-    --bs-secondary-rgb: 218, 255, 1;
-    --bs-info: #5d31ff;
-    --bs-info-rgb: 93, 49, 255;
-}
+
 
 a:link,
 a:visited {
     text-decoration: none;
 }
 
-h1, h2, h3, h4 {
-    color: #eeedf2;
+h1 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+h2, h3, h4 {
+    font-family: 'Ruda', sans-serif;
+}
+
+hr {
+    border: solid 2px #eeedf2;
 }
 
 .container-b {
     background-color: #1c1c1c;
+    color: #eeedf2;
 }
 
 header {
@@ -46,11 +57,6 @@ svg {
     align-items: center;
     justify-content: center;
 
-}
-
-h1 {
-    font-family: 'Work Sans', sans-serif;
-    color: #eeedf2;
 }
 
 .heading::before {
@@ -81,4 +87,27 @@ h1 {
     padding: 0.5rem;
     color: #eeedf2;
     margin-top: 3rem;
+
+}
+
+.footer-1 {
+    font-family: 'Ruda', sans-serif;
+}
+
+.footer-1 p {
+    font-size: x-large;
+}
+
+.info {
+    text-decoration: underline;
+}
+
+.footer-1 ul li {
+    text-decoration: none;
+    list-style: none;
+    font-size: x-large;
+}
+
+.footer-1 .credits {
+    text-decoration: none;
 }
