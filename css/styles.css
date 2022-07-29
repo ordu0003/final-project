@@ -6,6 +6,24 @@ html {
     box-sizing: border-box;
 }
 
+:root {
+    --bs-primary: #1c1c1c;
+    --bs-primary-rgb: 28, 28, 28;
+    --bs-secondary: #daff01;
+    --bs-secondary-rgb: 218, 255, 1;
+    --bs-info: #5d31ff;
+    --bs-info-rgb: 93, 49, 255;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    color: #eeedf2;
+}
+
 .container-b {
     background-color: #1c1c1c;
 }
@@ -14,12 +32,20 @@ header {
     margin: 0;
 }
 
+svg {
+    fill: #eeedf2;
+}
+
 .cover-container {
     background-image: url(/images/main-banner.gif);
     background-color: #daff01;
     background-size: cover;
     height: 720px;
     align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 h1 {
@@ -29,12 +55,14 @@ h1 {
 
 .heading::before {
     content: "Bold";
-    animation: heading infinite 2s;
     padding-left: 10px;
+    animation: heading infinite 2s;
+    animation-delay:2s;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes heading {
-  
+
     0% {
         content: "Bold";
     }
@@ -46,4 +74,11 @@ h1 {
     75% {
         content: "Different";
     }
+}
+
+.button1 {
+    border: solid 3px #eeedf2;
+    padding: 0.5rem;
+    color: #eeedf2;
+    margin-top: 3rem;
 }
