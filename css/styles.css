@@ -1,0 +1,49 @@
+html {
+    font-family: 'Ruda', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container-b {
+    background-color: #1c1c1c;
+}
+
+header {
+    margin: 0;
+}
+
+.cover-container {
+    background-image: url(/images/main-banner.gif);
+    background-color: #daff01;
+    background-size: cover;
+    height: 720px;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    color: #eeedf2;
+}
+
+.heading::before {
+    content: "Bold";
+    animation: heading infinite 2s;
+    padding-left: 10px;
+}
+
+@keyframes heading {
+  
+    0% {
+        content: "Bold";
+    }
+
+    50% {
+        content: "Unique";
+    }
+
+    75% {
+        content: "Different";
+    }
+}
