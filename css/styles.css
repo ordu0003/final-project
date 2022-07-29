@@ -15,7 +15,6 @@ html {
 }
 
 
-
 a:link,
 a:visited {
     text-decoration: none;
@@ -34,18 +33,29 @@ hr {
     border: solid 2px #eeedf2;
 }
 
-.container-b {
-    background-color: #1c1c1c;
-    color: #eeedf2;
-}
+/****** Header styling*******/
 
 header {
     margin: 0;
 }
 
+nav {
+    text-transform: uppercase;
+    color: #eeedf2;
+    font-family: 'Work Sans', sans-serif;
+}
+
 svg {
     fill: #eeedf2;
 }
+
+/******* Main banner*******/
+
+.container-b {
+    background-color: #1c1c1c;
+    color: #eeedf2;
+}
+
 
 .cover-container {
     background-image: url(/images/main-banner.gif);
@@ -59,11 +69,16 @@ svg {
 
 }
 
+.heading {
+    background-color: rgba(28, 28, 28, .8);;
+    padding: 1rem;
+}
+
 .heading::before {
     content: "Bold";
     padding-left: 10px;
-    animation: heading infinite 2s;
-    animation-delay:2s;
+    animation: heading infinite 4s;
+    animation-delay:1s;
     animation-timing-function: ease-in-out;
 }
 
@@ -83,6 +98,7 @@ svg {
 }
 
 .button1 {
+    background-color: rgba(28, 28, 28, .4);
     border: solid 3px #eeedf2;
     padding: 0.5rem;
     color: #eeedf2;
@@ -90,16 +106,38 @@ svg {
 
 }
 
+/**********Footer ********/
+.top-arrow {
+    font-size: 2rem;
+    color: #5d31ff;
+}
+
 .footer-1 {
     font-family: 'Ruda', sans-serif;
 }
 
-.footer-1 p {
+.footer-1 p a {
     font-size: x-large;
+    text-decoration: underline;
 }
 
-.info {
-    text-decoration: underline;
+.footer-1 p a:visited {
+    color: #eeedf2;
+}
+
+.footer-1 p a:link {
+    color: #eeedf2;
+}
+
+.footer-1 p a:hover {
+    color: #daff01;
+}
+
+.footer-1 ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-1 ul li {
@@ -109,5 +147,8 @@ svg {
 }
 
 .footer-1 .credits {
-    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
