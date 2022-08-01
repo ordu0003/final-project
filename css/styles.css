@@ -14,6 +14,11 @@ html {
     box-sizing: border-box;
 }
 
+.wrapper {
+    margin: 0 auto;
+    width: 680px;
+}
+
 
 a:link,
 a:visited {
@@ -49,11 +54,21 @@ svg {
     fill: #eeedf2;
 }
 
+.svg2 {
+    fill: #1c1c1c;
+}
+
+
 /******* Main banner*******/
 
 .container-b {
     background-color: #1c1c1c;
     color: #eeedf2;
+}
+
+.container-w {
+    background-color: #eeedf2;
+    color: #1c1c1c;
 }
 
 
@@ -62,7 +77,6 @@ svg {
     background-color: #daff01;
     background-size: cover;
     height: 720px;
-    align-items: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,12 +117,105 @@ svg {
     padding: 0.5rem;
     color: #eeedf2;
     margin-top: 3rem;
-
+    text-decoration: none;
 }
 
+.button1:hover {
+    background-color: #eeedf2;
+    color: #1c1c1c;
+}
+
+.loop-text:hover {
+    color: #daff01;
+}
+
+.contact {
+    background-image: url(/images/quote-bg.jpg);
+    background-color: #1c1c1c;
+    background-size:contain;
+    height: 420px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    margin-top: 2rem;
+}
+
+.button2 {
+    border: solid 3px #5d31ff;
+    padding: 0.5rem;
+    color: #5d31ff;
+    margin-top: 3rem;
+    text-decoration: none;
+}
+
+.button2:hover {
+    background-color:#5d31ff;;
+    color: #1c1c1c;
+}
+
+/**********work.html********/
+
+.work {
+    width: 100%;
+    height: fit-content;
+}
+
+.work p {
+    text-align: justify;
+}
+
+.gallery {
+    display: flex;
+    display: inline-block;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-project {
+    position: relative;
+    margin: 1rem 0;
+}
+
+.overlay {
+position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(28, 28, 28, .7);
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay h3 {
+color: white;
+  font-size: 20px;
+}
+
+.overlay p {
+    color: white;
+}
+.gallery-project:hover .overlay {
+    opacity: 1;
+  }
+
+
 /**********Footer ********/
-.top-arrow {
-    font-size: 2rem;
+.top-arrow i {
+    font-size: 10rem;
     color: #5d31ff;
 }
 
@@ -130,7 +237,7 @@ svg {
 }
 
 .footer-1 p a:hover {
-    color: #daff01;
+    color: #5d31ff;
 }
 
 .footer-1 ul {
@@ -147,6 +254,47 @@ svg {
 }
 
 .footer-1 .credits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-2 {
+    font-family: 'Ruda', sans-serif;
+}
+
+.footer-2 p a {
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+.footer-2 p a:visited {
+    color: #1c1c1c;
+}
+
+.footer-2 p a:link {
+    color: #1c1c1c;
+}
+
+.footer-2 p a:hover {
+    color: #5d31ff;
+}
+
+.footer-2 ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-2 ul li {
+    text-decoration: none;
+    list-style: none;
+    font-size: x-large;
+}
+
+.footer-2 .credits {
     display: flex;
     flex-direction: column;
     align-items: center;
