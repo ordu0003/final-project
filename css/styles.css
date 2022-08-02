@@ -30,7 +30,9 @@ h1 {
 }
 
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
     font-family: 'Ruda', sans-serif;
 }
 
@@ -72,7 +74,6 @@ svg {
     font-family: 'Ruda', sans-serif;
 }
 
-
 .cover-container {
     background-image: url(/images/main-banner.gif);
     background-color: #daff01;
@@ -81,11 +82,11 @@ svg {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .heading {
-    background-color: rgba(28, 28, 28, .8);;
+    background-color: rgba(28, 28, 28, .8);
+    ;
     padding: 1rem;
 }
 
@@ -93,7 +94,7 @@ svg {
     content: "Bold";
     padding-left: 10px;
     animation: heading infinite 4s;
-    animation-delay:1s;
+    animation-delay: 1s;
     animation-timing-function: ease-in-out;
 }
 
@@ -133,7 +134,7 @@ svg {
 .contact {
     background-image: url(/images/quote-bg.jpg);
     background-color: #1c1c1c;
-    background-size:contain;
+    background-size: contain;
     height: 420px;
     background-repeat: no-repeat;
     display: flex;
@@ -153,7 +154,7 @@ svg {
 }
 
 .button2:hover {
-    background-color:#5d31ff;;
+    background-color: #5d31ff;
     color: #1c1c1c;
 }
 
@@ -185,25 +186,25 @@ svg {
 }
 
 .overlay {
-position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(28, 28, 28, .7);
-  display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(28, 28, 28, .7);
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .overlay h3 {
-color: white;
-  font-size: 20px;
+    color: white;
+    font-size: 20px;
 }
 
 .overlay p {
@@ -212,33 +213,62 @@ color: white;
 
 .gallery-project:hover .overlay {
     opacity: 1;
-  }
+}
 
 /**********Projects ********/
 
 .project-banner img {
- width: 100%;
- height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .project-description p:nth-child(2) {
     color: #A8A8A8;
 }
 
-table {
+.project-list {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-list ul {
     width: 100%;
 }
 
-tbody {
-    width: 100%;
-}
-
-table tr {
+.project-list ul li {
     border-bottom: #1c1c1c solid 2px;
+    list-style: none;
+    align-self: center;
+}
+
+.project-list ul li:nth-child(1) {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.project-list ul li:nth-child(2) {
+    font-weight: 900;
+}
+
+.project-gallery img {
+ width: 100%;
+ margin-bottom: 1rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #5d31ff;
+    font-size: 10rem;
+    font-weight: 900;
 }
 
 /**********Footer ********/
