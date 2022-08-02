@@ -16,7 +16,7 @@ html {
 
 .wrapper {
     margin: 0 auto;
-    width: 680px;
+    width: 480px;
 }
 
 
@@ -47,7 +47,6 @@ header {
 nav {
     text-transform: uppercase;
     color: #eeedf2;
-    font-family: 'Work Sans', sans-serif;
 }
 
 svg {
@@ -64,11 +63,13 @@ svg {
 .container-b {
     background-color: #1c1c1c;
     color: #eeedf2;
+    font-family: 'Ruda', sans-serif;
 }
 
 .container-w {
     background-color: #eeedf2;
     color: #1c1c1c;
+    font-family: 'Ruda', sans-serif;
 }
 
 
@@ -208,10 +209,37 @@ color: white;
 .overlay p {
     color: white;
 }
+
 .gallery-project:hover .overlay {
     opacity: 1;
   }
 
+/**********Projects ********/
+
+.project-banner img {
+ width: 100%;
+ height: auto;
+}
+
+.project-description p:nth-child(2) {
+    color: #A8A8A8;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+tbody {
+    width: 100%;
+}
+
+table tr {
+    border-bottom: #1c1c1c solid 2px;
+}
 
 /**********Footer ********/
 .top-arrow i {
