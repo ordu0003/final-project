@@ -28,24 +28,25 @@ html {
     padding: 0;
     display: flex;
     flex-direction: row;
-  }
-  
-  .skip-links a {
+}
+
+.skip-links a {
     position: absolute;
     top: -3em;
     background-color: #eeedf2;
     padding: 0.5rem 0.5rem;
     font-weight: bold;
     color: #1c1c1c;
-  }
-  
-  .skip-links a:focus{
+}
+
+.skip-links a:focus {
     top: 0;
-  }
+}
 
 a {
     color: #eeedf2;
 }
+
 a:hover {
     color: #5d31ff;
 }
@@ -64,6 +65,7 @@ h2,
 h3,
 h4 {
     font-family: 'Ruda', sans-serif;
+    margin: 1rem;
 }
 
 hr {
@@ -116,7 +118,6 @@ svg {
 
 .heading {
     background-color: rgba(28, 28, 28, .8);
-    ;
     padding: 1rem;
 }
 
@@ -252,6 +253,13 @@ svg {
     width: 100%;
     height: auto;
 }
+.project-description {
+    margin: 1rem;
+}
+
+.project-description p {
+    margin-left: 0.5rem;
+}
 
 .project-description p:nth-child(2) {
     color: #A8A8A8;
@@ -264,8 +272,6 @@ svg {
     align-items: center;
     justify-content: center;
     padding: 0;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
 }
 
 .project-list ul {
@@ -276,6 +282,7 @@ svg {
     border-bottom: #1c1c1c solid 2px;
     list-style: none;
     align-self: center;
+    padding-bottom: 0.5rem;
 }
 
 .project-list ul li:nth-child(1) {
@@ -288,8 +295,8 @@ svg {
 }
 
 .project-gallery img {
- width: 100%;
- margin-bottom: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 .buttons {
@@ -309,6 +316,29 @@ svg {
 .buttons a:hover {
     color: #5d31ff;
 }
+
+.buttons2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.work-2 a {
+    color: #1c1c1c;
+}
+
+.work-2 a:hover {
+    color: #5d31ff;
+}
+
+.work-heading {
+    padding: 0 2rem;
+    width: 100%;
+}
+
 
 /**********Footer ********/
 .top-arrow a i {
@@ -411,32 +441,114 @@ svg {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
-  }
-  
-  .column {
+}
+
+.column {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
-  }
-  
-  .column img {
+}
+
+.column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
-  }
+}
+
+@media screen and (min-width: 800px) {
+
+    .work-heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 5rem;
+    }
+
+    .work-heading p {
+        margin-top: 1rem;
+    }
+
+    .work-heading h2 {
+        width: 50%;
+        margin-left: 2rem;
+    }
+
+    .project-gallery {
+        display: grid;
+        grid-template-areas:
+        'img1 img1'
+        'img2 img3'
+        'img4 img4';
+        gap: 0.5rem;
+        margin: 0 1rem;
+    }
+
+    .project-gallery img {
+        margin: 0;
+    }
+    
+    .img1 { grid-area: img1; }
+    .img2 { grid-area: img2; }
+    .img3 { grid-area: img3; }
+    .img4 { grid-area: img4; }
+    
+    .project-gallery:nth-child(2){
+width: 50%;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+    }
+
+    .gallery-project {
+        width: 50%;
+        margin: 0.5rem;
+    }
+
+    .project-description {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 1rem;
+        width: 90%;
+    }
+
+    .buttons {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .buttons2 {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 2rem;
+    }
+
+    .footer-menu {
+        width: 50%;
+        margin-top: 2rem;
+    }
+
+}
 
 /* Responsive layout - two column-layout*/
 @media screen and (max-width: 800px) {
     .column {
-      flex: 50%;
-      max-width: 50%;
+        flex: 50%;
+        max-width: 50%;
     }
-  }
-  
-  /* Responsive layout - mobile one columd */
-  @media screen and (max-width: 600px) {
+}
+
+/* Responsive layout - mobile one columd */
+@media screen and (max-width: 600px) {
     .column {
-      flex: 100%;
-      max-width: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
-  }
+}
