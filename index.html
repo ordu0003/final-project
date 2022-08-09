@@ -6,31 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jess Orduz Portfolio</title>
-    <link href="css/styles.css" rel="stylesheet">
-    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/">
-    <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">-->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@400;900&family=Ruda:wght@400;500;600;700;800;900&family=Work+Sans:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&display=swap"
         rel="stylesheet">
     <!-- Bootstrap CSS only -->
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a3c61ba515.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container-b">
         <div class="wrapper">
+            <ul class="skip-links">
+                <li><a href="#nav">Skip to main nav 🡣</a></li>
+                <li><a href="#main">Skip to main content 🡣</a></li>
+                <li><a href="#footer">Skip to contact form 🡣</a></li>
+              </ul>
             <!-- **** Navigation bar **** -->
             <header class="d-flex justify-content-center">
-                <nav class="navbar navbar-dark">
+
+                <nav class="navbar navbar-dark" id="nav" aria-label="main-nav" role="navigation">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        MENU <!-- ****<span class="navbar-toggler-icon"></span>**** -->
                     </button>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -158,52 +164,45 @@
                 </nav>
             </header>
             <!-- **** Banner Section **** -->
-            <div class="cover-container  md-flex w-100 p-3 mx-auto flex-column">
+            <div class="cover-container  md-flex w-100 p-3 mx-auto flex-column" role="banner">
                     <h1 class="display-1 fw-bold text-center">Be <span class="heading"></span></h1>
                 <a href="work.html" class="button1">My Work</a>
             </div>
-            <main>
+            <main role="main">
                 <!-- **** Portfolio Section **** -->
                 <section>
-                    <div class="loop-text-conatiner">
-                        <marquee class="loop-text" behavior="scroll" direction="left"><a href="#ux">
+                        <marquee class="loop-text" behavior="scroll" direction="left"><a href="work-ux1.html">
                             <h4 class="display-4 fw-bold">Ux Design Ux Design Ux Design Ux Design Ux Design Ux Design
-                            </h4>
-                        </a>
+                            </h4></a>
                         </marquee>
-                    </div>
-                    <div class="loop-text-conatiner">
-                        <marquee class="loop-text" behavior="scroll" direction="left"><a href="#branding">
+                        <marquee class="loop-text" behavior="scroll" direction="right"><a href="work-branding1.html">
                             <h4 class="display-4 fw-bold">Branding Branding Branding Branding Branding Branding</h4></a>
                         </marquee>
-                    </div>
-                    <div class="loop-text-conatiner">
-                        <marquee class="loop-text" behavior="scroll" direction="left"><a href="#ux">
+                        <marquee class="loop-text" behavior="scroll" direction="left"><a href="work-illustration.html">
                             <h4 class="display-4 fw-bold">Illustration Illustration Illustration Illustration
                                 Illustration Illustration</h4></a>
                         </marquee>
-                    </div>
-                    <div class="loop-text-conatiner">
-                        <marquee class="loop-text" behavior="scroll" direction="left"><a href="#ux">
+                        <marquee class="loop-text" behavior="scroll" direction="right"><a href="work-photography.html">
                             <h4 class="display-4 fw-bold">Photography Photography Photography Photography Photography Photography</h4></a>
                         </marquee>
-                    </div>
                 </section>
                 <!-- **** Contact Section **** -->
                 <section class="contact">
-                    <h3 class="display-4 fw-bold text-center">Why be boring when you can be <b>bold and unique</b></h4>
+                    <h3 class="display-4 fw-bold text-center">Why be boring<br> when you can be <br><b>bold and unique</b></h4>
                     <a href="info.html" class="button2">Take the risk</a>
                 </section>
             </main>
-            <footer class="footer-1">
+            <footer class="footer-1" aria-label="site-footer" role="contentinfo" id="footer">
                 <div class="top-arrow">
-                    <i class="fa-light fa-square-arrow-up"></i>
+                    <ul class="skip-links2">
+                      <li><a href="#nav"><i class="fa-solid fa-arrow-up"></i></a></li>
+                    </ul>
                 </div>
                 <div class="contact-info md-flex w-100 p-3 mx-auto flex-column">
                     <h5 class="display-5 fw-bold">Have an idea?</h5>
                     <h5 class="display-5 fw-bold">Contact me<i class="fa-light fa-arrow-down-right"></i></h5>
                     <p><a href="mailto:dg.jessicao@gmail.com">dg.jessicao@gmail.com</a></p>
-                    <p><a href="wa.me/15849785950">1 (581) 978 5950</a></p>
+                    <p><a href="https://api.whatsapp.com/send/?phone=15849785950&text&type=phone_number&app_absent=0">1 (581) 978 5950</a></p>
                 </div>
                 <hr>
                 <div class="footer-menu">
@@ -219,6 +218,8 @@
             </footer>
         </div>
     </div>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>

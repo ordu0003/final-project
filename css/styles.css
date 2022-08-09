@@ -4,6 +4,8 @@
     --bs-secondary: #daff01;
     --bs-secondary-rgb: 218, 255, 1;
     --bs-info: #5d31ff;
+    -webkit-any-link: #daff01;
+    /*bs blue*/
 }
 
 html {
@@ -16,9 +18,37 @@ html {
 
 .wrapper {
     margin: 0 auto;
-    width: 480px;
 }
 
+/******Accesibility*******/
+
+.skip-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .skip-links a {
+    position: absolute;
+    top: -3em;
+    background-color: #eeedf2;
+    padding: 0.5rem 0.5rem;
+    font-weight: bold;
+    color: #1c1c1c;
+  }
+  
+  .skip-links a:focus{
+    top: 0;
+  }
+
+a {
+    color: #eeedf2;
+}
+a:hover {
+    color: #5d31ff;
+}
 
 a:link,
 a:visited {
@@ -135,6 +165,7 @@ svg {
     background-image: url(/images/quote-bg.jpg);
     background-color: #1c1c1c;
     background-size: contain;
+    background-position: center;
     height: 420px;
     background-repeat: no-repeat;
     display: flex;
@@ -266,14 +297,22 @@ svg {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #5d31ff;
-    font-size: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.buttons a {
     font-weight: 900;
+    color: #1c1c1c;
+}
+
+.buttons a:hover {
+    color: #5d31ff;
 }
 
 /**********Footer ********/
-.top-arrow i {
-    font-size: 10rem;
+.top-arrow a i {
+    font-size: 2.5rem;
     color: #5d31ff;
 }
 
@@ -322,6 +361,14 @@ svg {
     font-family: 'Ruda', sans-serif;
 }
 
+.footer-2 a {
+    color: #1c1c1c;
+}
+
+.footer-2 a:hover {
+    color: #5d31ff;
+}
+
 .footer-2 p a {
     font-size: x-large;
     text-decoration: underline;
@@ -358,3 +405,38 @@ svg {
     align-items: center;
     justify-content: center;
 }
+
+/**********Photo Gallery ********/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+/* Responsive layout - two column-layout*/
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - mobile one columd */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
