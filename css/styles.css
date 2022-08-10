@@ -350,6 +350,10 @@ svg {
     width: 100%;
 }
 
+.work-heading p {
+    padding-top: 1rem;
+}
+
 
 /**********Footer Dark********/
 .top-arrow a {
