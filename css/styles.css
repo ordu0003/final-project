@@ -107,7 +107,7 @@ svg {
 }
 
 .cover-container {
-    background-image: url(/images/main-banner.gif);
+    background-image: url(../images/main-banner.gif);
     background-color: #daff01;
     background-size: cover;
     height: 720px;
@@ -163,7 +163,7 @@ svg {
 }
 
 .contact {
-    background-image: url(/images/quote-bg.jpg);
+    background-image: url(../images/quote-bg.jpg);
     background-color: #1c1c1c;
     background-size: contain;
     background-position: center;
