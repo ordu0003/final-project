@@ -80,7 +80,11 @@ header {
 
 nav {
     text-transform: uppercase;
-    color: #eeedf2;
+    justify-content: space-evenly;
+}
+
+nav a:hover {
+color: #5d31ff;
 }
 
 svg {
