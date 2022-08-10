@@ -261,7 +261,7 @@ svg {
     margin-left: 0.5rem;
 }
 
-.project-description p:nth-child(2) {
+.project-description p:nth-child(3) {
     color: #A8A8A8;
 }
 
@@ -341,8 +341,8 @@ svg {
 
 
 /**********Footer ********/
-.top-arrow a i {
-    font-size: 2.5rem;
+.top-arrow a {
+    font-size: 3rem;
     color: #5d31ff;
 }
 
@@ -457,6 +457,10 @@ svg {
 
 @media screen and (min-width: 800px) {
 
+    .wrapper {
+        width: 80%;
+    }
+
     .work-heading {
         display: flex;
         flex-direction: row;
@@ -509,9 +513,13 @@ width: 50%;
 
     .project-description {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
         margin: 1rem;
         width: 90%;
+    }
+
+    .project-description .project-list {
+        order:3;
     }
 
     .buttons {
