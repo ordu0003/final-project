@@ -1,3 +1,4 @@
+/*Change Boostrap colours*/
 :root {
     --bs-primary: #1c1c1c;
     --bs-primary-rgb: 28, 28, 28;
@@ -5,7 +6,6 @@
     --bs-secondary-rgb: 218, 255, 1;
     --bs-info: #5d31ff;
     -webkit-any-link: #daff01;
-    /*bs blue*/
 }
 
 html {
@@ -44,11 +44,15 @@ html {
     top: 0;
 }
 
+/******Links*******/
+
 a {
     color: #eeedf2;
+    font-family: 'Ruda', sans-serif;
 }
 
-a:hover {
+a:hover,
+a:focus {
     color: #5d31ff;
 }
 
@@ -69,15 +73,12 @@ h4 {
     margin: 1rem;
 }
 
-hr {
-    border: solid 2px #eeedf2;
-}
-
 /****** Header styling*******/
-
 header {
     margin: 0;
 }
+
+/****** Navigation bar *******/
 
 nav {
     text-transform: uppercase;
@@ -85,7 +86,7 @@ nav {
 }
 
 nav a:hover {
-color: #5d31ff;
+    color: #5d31ff;
 }
 
 svg {
@@ -102,13 +103,11 @@ svg {
 .container-b {
     background-color: #1c1c1c;
     color: #eeedf2;
-    font-family: 'Ruda', sans-serif;
 }
 
 .container-w {
     background-color: #eeedf2;
     color: #1c1c1c;
-    font-family: 'Ruda', sans-serif;
 }
 
 .cover-container {
@@ -120,6 +119,8 @@ svg {
     align-items: center;
     justify-content: center;
 }
+
+/******* Main heading*******/
 
 .heading {
     background-color: rgba(28, 28, 28, .8);
@@ -149,6 +150,7 @@ svg {
     }
 }
 
+/******* Main banner button*******/
 .button1 {
     background-color: rgba(28, 28, 28, .4);
     border: solid 3px #eeedf2;
@@ -167,6 +169,7 @@ svg {
     color: #daff01;
 }
 
+/******* Home Contact section*******/
 .contact {
     background-image: url(../images/quote-bg.jpg);
     background-color: #1c1c1c;
@@ -194,6 +197,7 @@ svg {
     background-color: #5d31ff;
     color: #1c1c1c;
 }
+
 
 /**********work.html********/
 
@@ -258,6 +262,7 @@ svg {
     width: 100%;
     height: auto;
 }
+
 .project-description {
     margin: 1rem;
 }
@@ -304,6 +309,7 @@ svg {
     margin-bottom: 1rem;
 }
 
+/******* Project Buttons *******/
 .buttons {
     display: flex;
     flex-direction: column;
@@ -345,7 +351,7 @@ svg {
 }
 
 
-/**********Footer ********/
+/**********Footer Dark********/
 .top-arrow a {
     font-size: 3rem;
     color: #5d31ff;
@@ -392,6 +398,7 @@ svg {
     justify-content: center;
 }
 
+/**********Footer Light ********/
 .footer-2 {
     font-family: 'Ruda', sans-serif;
 }
@@ -460,6 +467,8 @@ svg {
     width: 100%;
 }
 
+/********** Mobile ********/
+
 @media screen and (min-width: 800px) {
 
     .wrapper {
@@ -470,7 +479,7 @@ svg {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        padding: 0 5rem;
+        padding: 0;
     }
 
     .work-heading p {
@@ -478,16 +487,20 @@ svg {
     }
 
     .work-heading h2 {
-        width: 50%;
-        margin-left: 2rem;
+        white-space: nowrap;
+        margin-right: 2rem;
+    }
+
+    .work-2 {
+        margin-top: 1rem;
     }
 
     .project-gallery {
         display: grid;
         grid-template-areas:
-        'img1 img1'
-        'img2 img3'
-        'img4 img4';
+            'img1 img1'
+            'img2 img3'
+            'img4 img4';
         gap: 0.5rem;
         margin: 0 1rem;
     }
@@ -495,14 +508,25 @@ svg {
     .project-gallery img {
         margin: 0;
     }
-    
-    .img1 { grid-area: img1; }
-    .img2 { grid-area: img2; }
-    .img3 { grid-area: img3; }
-    .img4 { grid-area: img4; }
-    
-    .project-gallery:nth-child(2){
-width: 50%;
+
+    .img1 {
+        grid-area: img1;
+    }
+
+    .img2 {
+        grid-area: img2;
+    }
+
+    .img3 {
+        grid-area: img3;
+    }
+
+    .img4 {
+        grid-area: img4;
+    }
+
+    .project-gallery:nth-child(2) {
+        width: 50%;
     }
 
     .gallery {
@@ -524,13 +548,14 @@ width: 50%;
     }
 
     .project-description .project-list {
-        order:3;
+        order: 3;
     }
 
     .buttons {
         flex-direction: row;
         justify-content: space-around;
     }
+
     .buttons2 {
         flex-direction: row;
         justify-content: space-around;
@@ -550,7 +575,7 @@ width: 50%;
 
 }
 
-/* Responsive layout - two column-layout*/
+/* Responsive layout Gallery - two column-layout*/
 @media screen and (max-width: 800px) {
     .column {
         flex: 50%;
@@ -558,7 +583,7 @@ width: 50%;
     }
 }
 
-/* Responsive layout - mobile one columd */
+/* Responsive layout Gallery - mobile one columd */
 @media screen and (max-width: 600px) {
     .column {
         flex: 100%;
